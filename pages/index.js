@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div style={{ padding: 40, fontFamily: "Arial", backgroundColor: "black", color: "white", minHeight: "100vh" }}>
-      <h1>Krish in USA 🇮🇳🇺🇸</h1>
+      <h1>Krish in USA </h1>
       <p>Fitness | Cooking | Dance | Travel</p>
 
       <hr />
