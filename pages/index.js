@@ -1,23 +1,27 @@
 export default function Home() {
   return (
-    <div style={{ padding: 40, fontFamily: "Arial" }}>
-      <h1>🇮🇳 Indian Community USA 🇺🇸</h1>
-      <p>Connecting Culture, People & Opportunities</p>
+    <div style={{ padding: 40, fontFamily: "Arial", backgroundColor: "black", color: "white", minHeight: "100vh" }}>
+      <h1>Krish in USA 🇮🇳🇺🇸</h1>
+      <p>Fitness | Cooking | Dance | Travel</p>
 
       <hr />
 
-      <h2>🎉 Events & Festivals</h2>
-      <p>Find Ugadi, Diwali, Holi near you</p>
+      <h2>💪 Fitness</h2>
+      <p>My gym journey and diet plans</p>
 
-      <h2>💼 Jobs & Networking</h2>
-      <p>Referrals, connections, growth</p>
+      <h2>🍳 Cooking</h2>
+      <p>Paneer curry, chicken curry & more</p>
 
-      <h2>🛍️ Local Services</h2>
-      <p>Indian groceries, restaurants, services</p>
+      <h2>💃 Dance</h2>
+      <p>Indian + western dance reels</p>
+
+      <h2>✈️ Travel</h2>
+      <p>Exploring USA & sharing experiences</p>
 
       <hr />
 
-      <p>🚀 Built by Krish</p>
+      <h2>About Me</h2>
+      <p>I’m Krish, living in the USA and passionate about fitness, cooking, dance, and travel.</p>
     </div>
   );
 }
