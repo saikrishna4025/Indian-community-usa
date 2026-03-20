@@ -79,6 +79,7 @@ export default function Home() {
             {/* BUTTONS */}
             <div style={{ marginTop: "25px", display: "flex", justifyContent: "center", gap: "15px", flexWrap: "wrap" }}>
               <button
+                onClick={() => window.open("https://www.instagram.com/boardingwithbae/", "_blank")}
                 style={{
                   padding: "12px 25px",
                   background: "#f43f5e",
