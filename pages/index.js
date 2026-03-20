@@ -18,6 +18,7 @@ export default function Home() {
           "url('https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1920&auto=format&fit=crop')",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
         color: "white",
         minHeight: "100vh",
       }}
@@ -27,17 +28,23 @@ export default function Home() {
 
         {/* NAVBAR */}
         <div style={{ display: "flex", justifyContent: "space-between", padding: "20px 30px", alignItems: "center" }}>
-          <h2
-            style={{
-              fontFamily: "'Dancing Script', cursive",
-              fontSize: "28px",
-              background: "linear-gradient(45deg,#ff4d6d,#facc15,#38bdf8)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-            }}
-          >
-            <span style={{fontSize:"16px",display:"block"}}>KRISHVYSH 💑</span>
-          </h2>
+          <div>
+            <h2
+              style={{
+                fontFamily: "'Dancing Script', cursive",
+                fontSize: "26px",
+                margin: 0,
+                background: "linear-gradient(45deg,#ff4d6d,#facc15,#38bdf8)",
+                WebkitBackgroundClip: "text",
+                color: "transparent",
+              }}
+            >
+              BoardingWithBae ✈️❤️✨
+            </h2>
+            <span style={{ fontSize: "12px" }}>
+              KRISHVYSH 🕺💃
+            </span>
+          </div>
 
           <div style={{ display: "flex", gap: "20px", fontSize: "14px" }}>
             <span onClick={() => setSection("home")} style={{ cursor: "pointer" }}>Home</span>
@@ -51,9 +58,10 @@ export default function Home() {
         {section === "home" && (
           <div style={{ textAlign: "center", padding: "100px 20px" }}>
 
+            {/* BIG TITLE */}
             <h1
               style={{
-                fontSize: "clamp(40px,6vw,80px)",
+                fontSize: "clamp(50px,8vw,90px)",
                 fontFamily: "'Dancing Script', cursive",
                 background: "linear-gradient(45deg,#ff4d6d,#facc15,#38bdf8)",
                 WebkitBackgroundClip: "text",
@@ -61,13 +69,15 @@ export default function Home() {
                 textShadow: "0 0 20px rgba(255,77,109,0.4)",
               }}
             >
-              <span style={{fontSize:"16px",display:"block"}}>KRISHVYSH 💑</span>
+              BoardingWithBae ✈️❤️✨
             </h1>
 
-            <p style={{ fontSize: "18px", marginTop: "10px", color: "#f43f5e" }}>
-              <span style={{fontSize:"clamp(50px,7vw,90px)",fontFamily:"'Dancing Script', cursive",background:"linear-gradient(45deg,#ff4d6d,#facc15,#38bdf8)",WebkitBackgroundClip:"text",color:"transparent",fontWeight:"bold",display:"block"}}>BoardingWithBae ✈️❤️</span>
+            {/* SMALL NAME */}
+            <p style={{ fontSize: "16px", marginTop: "5px" }}>
+              KRISHVYSH 🕺💃
             </p>
 
+            {/* TAGLINE */}
             <p style={{ fontSize: "20px", marginTop: "15px" }}>
               Dance • Travel • Love
             </p>
@@ -76,12 +86,15 @@ export default function Home() {
               A crazy dancing couple vibing through cities, capturing love, energy, and unforgettable moments.
             </p>
 
-            {/* BUTTONS */}
+            {/* SOCIAL BUTTONS */}
             <div style={{ marginTop: "25px", display: "flex", justifyContent: "center", gap: "15px", flexWrap: "wrap" }}>
+
+              {/* INSTAGRAM */}
               <button
+                onClick={() => window.open("https://www.instagram.com/boardingwithbae/", "_blank")}
                 style={{
-                  padding: "12px 25px",
-                  background: "#f43f5e",
+                  padding: "12px 20px",
+                  background: "#E1306C",
                   borderRadius: "25px",
                   border: "none",
                   color: "white",
@@ -89,21 +102,25 @@ export default function Home() {
                   cursor: "pointer",
                 }}
               >
-                Watch Reels 🎥
+                📸 Instagram
               </button>
 
+              {/* YOUTUBE */}
               <button
+                onClick={() => window.open("https://youtube.com", "_blank")}
                 style={{
-                  padding: "12px 25px",
-                  background: "transparent",
+                  padding: "12px 20px",
+                  background: "#FF0000",
                   borderRadius: "25px",
-                  border: "1px solid white",
+                  border: "none",
                   color: "white",
+                  fontWeight: "bold",
                   cursor: "pointer",
                 }}
               >
-                Follow Journey ✨
+                ▶️ YouTube
               </button>
+
             </div>
           </div>
         )}
@@ -134,7 +151,7 @@ export default function Home() {
 
         {/* FOOTER */}
         <div style={{ textAlign: "center", padding: "20px", color: "#94a3b8" }}>
-          © 2026 <span style={{fontSize:"16px",display:"block"}}>KRISHVYSH 💑</span>
+          © 2026 BoardingWithBae ✈️❤️✨
         </div>
       </div>
     </div>
