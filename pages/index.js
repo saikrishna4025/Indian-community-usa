@@ -4,53 +4,45 @@ export default function KrishWebsite() {
   const [section, setSection] = useState("home");
 
   return (
-    <div style={{ fontFamily: "'Poppins', 'Arial'", backgroundColor: "#0f172a", color: "white", minHeight: "100vh" }}>
+    <div style={{ fontFamily: "Arial", background: "linear-gradient(135deg,#0f172a,#1e293b)", color: "white", minHeight: "100vh" }}>
       {/* NAVBAR */}
-      <div style={{ display: "flex", justifyContent: "space-between", padding: "20px", borderBottom: "1px solid #1e293b" }}>
-        <h2 style={{ fontFamily: "'Pacifico', cursive", fontSize: "28px" }}>BoardingWithBae ✈️❤️</h2>
-        <div style={{ display: "flex", gap: "20px" }}>
-          <span onClick={() => setSection("home")} style={{ cursor: "pointer" }}>Home</span>
-          <span onClick={() => setSection("fitness")} style={{ cursor: "pointer" }}>Fitness</span>
-          <span onClick={() => setSection("cooking")} style={{ cursor: "pointer" }}>Cooking</span>
-          <span onClick={() => setSection("dance")} style={{ cursor: "pointer" }}>Dance</span>
-          <span onClick={() => setSection("travel")} style={{ cursor: "pointer" }}>Travel</span>
+      <div style={{ display: "flex", justifyContent: "space-between", padding: "20px 40px" }}>
+        <h2 style={{ fontSize: "24px", fontWeight: "bold" }}>BoardingWithBae ✈️❤️</h2>
+        <div style={{ display: "flex", gap: "25px" }}>
+          <span style={{ cursor: "pointer" }} onClick={() => setSection("home")}>Home</span>
+          <span style={{ cursor: "pointer" }} onClick={() => setSection("travel")}>Travel</span>
+          <span style={{ cursor: "pointer" }} onClick={() => setSection("food")}>Food</span>
+          <span style={{ cursor: "pointer" }} onClick={() => setSection("lifestyle")}>Lifestyle</span>
         </div>
       </div>
 
-      {/* HERO */}
+      {/* HERO SECTION */}
       {section === "home" && (
-        <div style={{ textAlign: "center", padding: "60px 20px" }}>
-          <h1 style={{ fontFamily: "'Pacifico', cursive", fontSize: "60px", marginBottom: "10px" }}>
+        <div style={{ textAlign: "center", padding: "80px 20px" }}>
+          <h1 style={{ fontSize: "64px", fontWeight: "bold" }}>
             BoardingWithBae ✈️❤️
           </h1>
-          <p style={{ color: "#94a3b8", fontSize: "18px" }}>Travel | Food | Lifestyle</p>
-          <p style={{ marginTop: "20px", maxWidth: "600px", marginInline: "auto" }}>
-            Exploring life together with love, travel, food, and unforgettable experiences.
+
+          <p style={{ fontSize: "20px", color: "#cbd5f5", marginTop: "10px" }}>
+            Travel • Food • Love
           </p>
-        </div>
-      )}
 
-      {/* FITNESS */}
-      {section === "fitness" && (
-        <div style={{ padding: "40px" }}>
-          <h1>💪 Fitness Journey</h1>
-          <p>Tracking workouts, diet plans, and transformation goals.</p>
-        </div>
-      )}
+          <p style={{ maxWidth: "600px", margin: "20px auto", color: "#94a3b8" }}>
+            A journey of love, adventures, and unforgettable experiences across the USA.
+          </p>
 
-      {/* COOKING */}
-      {section === "cooking" && (
-        <div style={{ padding: "40px" }}>
-          <h1>🍳 Cooking</h1>
-          <p>Paneer Curry, Chicken Curry, Coconut Rice & more homemade recipes.</p>
-        </div>
-      )}
-
-      {/* DANCE */}
-      {section === "dance" && (
-        <div style={{ padding: "40px" }}>
-          <h1>💃 Dance</h1>
-          <p>Fun reels blending Indian and western styles.</p>
+          <button style={{
+            marginTop: "20px",
+            padding: "12px 25px",
+            background: "#f43f5e",
+            border: "none",
+            borderRadius: "25px",
+            color: "white",
+            fontSize: "16px",
+            cursor: "pointer"
+          }}>
+            Explore Our Journey
+          </button>
         </div>
       )}
 
@@ -58,13 +50,29 @@ export default function KrishWebsite() {
       {section === "travel" && (
         <div style={{ padding: "40px" }}>
           <h1>✈️ Travel</h1>
-          <p>Exploring places across the USA and sharing experiences.</p>
+          <p>Exploring beautiful places together across the USA.</p>
+        </div>
+      )}
+
+      {/* FOOD */}
+      {section === "food" && (
+        <div style={{ padding: "40px" }}>
+          <h1>🍽️ Food</h1>
+          <p>Trying delicious dishes and sharing our favorite meals.</p>
+        </div>
+      )}
+
+      {/* LIFESTYLE */}
+      {section === "lifestyle" && (
+        <div style={{ padding: "40px" }}>
+          <h1>💑 Lifestyle</h1>
+          <p>Our daily life, moments, and memories together.</p>
         </div>
       )}
 
       {/* FOOTER */}
-      <div style={{ textAlign: "center", padding: "20px", borderTop: "1px solid #1e293b", marginTop: "40px" }}>
-        <p style={{ color: "#94a3b8" }}>© 2026 BoardingWithBae | Built with love ❤️</p>
+      <div style={{ textAlign: "center", padding: "20px", marginTop: "40px", color: "#94a3b8" }}>
+        © 2026 BoardingWithBae ❤️
       </div>
     </div>
   );
