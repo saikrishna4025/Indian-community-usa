@@ -38,9 +38,11 @@ export default function Home() {
               WebkitBackgroundClip: "text",
               color: "transparent"
             }}>
-              BoardingWithBae ✈️❤️
+              BoardingWithBae ✈️❤️✨
             </h2>
-            <span style={{ fontSize: "12px" }}>KRISHVYSH 💃🕺</span>
+            <span style={{ fontSize: "12px" }}>
+              KRISHVYSH 🕺💃
+            </span>
           </div>
 
           <div style={{ display: "flex", gap: "20px", fontSize: "14px" }}>
@@ -64,12 +66,12 @@ export default function Home() {
               color: "transparent",
               textShadow: "0 0 20px rgba(255,77,109,0.4)"
             }}>
-              BoardingWithBae ✈️❤️
+              BoardingWithBae ✈️❤️✨
             </h1>
 
             {/* SMALL NAME */}
             <p style={{ fontSize: "16px", marginTop: "5px" }}>
-              KRISHVYSH 💃🕺
+              KRISHVYSH 🕺💃
             </p>
 
             {/* TAGLINE */}
@@ -126,7 +128,7 @@ export default function Home() {
 
         {/* FOOTER */}
         <div style={{ textAlign: "center", padding: "20px", color: "#94a3b8" }}>
-          © 2026 BoardingWithBae ✈️❤️
+          © 2026 BoardingWithBae ✈️❤️✨
         </div>
 
       </div>
