@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-export default function BoardingWithBaeWebsite() {
+export default function KrishWebsite() {
   const [section, setSection] = useState("home");
 
   return (
-    <div style={{ fontFamily: "Arial", backgroundColor: "#0f172a", color: "white", minHeight: "100vh" }}>
+    <div style={{ fontFamily: "'Poppins', 'Arial'", backgroundColor: "#0f172a", color: "white", minHeight: "100vh" }}>
       {/* NAVBAR */}
       <div style={{ display: "flex", justifyContent: "space-between", padding: "20px", borderBottom: "1px solid #1e293b" }}>
-        <h2></h2>
+        <h2 style={{ fontFamily: "'Pacifico', cursive", fontSize: "28px" }}>BoardingWithBae ✈️❤️</h2>
         <div style={{ display: "flex", gap: "20px" }}>
           <span onClick={() => setSection("home")} style={{ cursor: "pointer" }}>Home</span>
           <span onClick={() => setSection("fitness")} style={{ cursor: "pointer" }}>Fitness</span>
@@ -20,10 +20,12 @@ export default function BoardingWithBaeWebsite() {
       {/* HERO */}
       {section === "home" && (
         <div style={{ textAlign: "center", padding: "60px 20px" }}>
-          <h1 style={{ fontSize: "50px", marginBottom: "10px" }}>BoardingWithBae ✈️❤️</h1>
-          <p style={{ color: "#94a3b8" }}>Fitness | Cooking | Dance | Travel</p>
+          <h1 style={{ fontFamily: "'Pacifico', cursive", fontSize: "60px", marginBottom: "10px" }}>
+            BoardingWithBae ✈️❤️
+          </h1>
+          <p style={{ color: "#94a3b8", fontSize: "18px" }}>Travel | Food | Lifestyle</p>
           <p style={{ marginTop: "20px", maxWidth: "600px", marginInline: "auto" }}>
-            Building a lifestyle of fitness, culture, and growth while living in the USA.
+            Exploring life together with love, travel, food, and unforgettable experiences.
           </p>
         </div>
       )}
@@ -32,7 +34,7 @@ export default function BoardingWithBaeWebsite() {
       {section === "fitness" && (
         <div style={{ padding: "40px" }}>
           <h1>💪 Fitness Journey</h1>
-          <p>Tracking my workouts, diet plans, and transformation goals.</p>
+          <p>Tracking workouts, diet plans, and transformation goals.</p>
         </div>
       )}
 
@@ -48,7 +50,7 @@ export default function BoardingWithBaeWebsite() {
       {section === "dance" && (
         <div style={{ padding: "40px" }}>
           <h1>💃 Dance</h1>
-          <p>Indian + Western dance reels and performances.</p>
+          <p>Fun reels blending Indian and western styles.</p>
         </div>
       )}
 
@@ -62,7 +64,7 @@ export default function BoardingWithBaeWebsite() {
 
       {/* FOOTER */}
       <div style={{ textAlign: "center", padding: "20px", borderTop: "1px solid #1e293b", marginTop: "40px" }}>
-        <p style={{ color: "#94a3b8" }}>© 2026 BoardingWithBae | Built with passion 🔥</p>
+        <p style={{ color: "#94a3b8" }}>© 2026 BoardingWithBae | Built with love ❤️</p>
       </div>
     </div>
   );
