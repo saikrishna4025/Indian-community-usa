@@ -6,7 +6,7 @@ export default function KrishWebsite() {
   return (
     <div style={{ 
       fontFamily: "Arial", 
-      backgroundImage: "url('/new-york-4753156...jpg')",
+      backgroundImage: "url('/nyc.jpg')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       color: "white", 
