@@ -36,7 +36,7 @@ export default function Home() {
               color: "transparent",
             }}
           >
-            KRISHVYSH 💑
+            <span style={{fontSize:"16px",display:"block"}}>KRISHVYSH 💑</span>
           </h2>
 
           <div style={{ display: "flex", gap: "20px", fontSize: "14px" }}>
@@ -61,11 +61,11 @@ export default function Home() {
                 textShadow: "0 0 20px rgba(255,77,109,0.4)",
               }}
             >
-              KRISHVYSH 💑
+              <span style={{fontSize:"16px",display:"block"}}>KRISHVYSH 💑</span>
             </h1>
 
             <p style={{ fontSize: "18px", marginTop: "10px", color: "#f43f5e" }}>
-              BoardingWithBae ✈️❤️
+              <span style={{fontSize:"clamp(50px,7vw,90px)",fontFamily:"'Dancing Script', cursive",background:"linear-gradient(45deg,#ff4d6d,#facc15,#38bdf8)",WebkitBackgroundClip:"text",color:"transparent",fontWeight:"bold",display:"block"}}>BoardingWithBae ✈️❤️</span>
             </p>
 
             <p style={{ fontSize: "20px", marginTop: "15px" }}>
@@ -134,7 +134,7 @@ export default function Home() {
 
         {/* FOOTER */}
         <div style={{ textAlign: "center", padding: "20px", color: "#94a3b8" }}>
-          © 2026 KRISHVYSH 💑
+          © 2026 <span style={{fontSize:"16px",display:"block"}}>KRISHVYSH 💑</span>
         </div>
       </div>
     </div>
