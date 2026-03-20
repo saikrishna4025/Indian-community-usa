@@ -1,27 +1,70 @@
-export default function Home() {
+import { useState } from "react";
+
+export default function KrishWebsite() {
+  const [section, setSection] = useState("home");
+
   return (
-    <div style={{ padding: 40, fontFamily: "Arial", backgroundColor: "black", color: "white", minHeight: "100vh" }}>
-      <h1>Krish in USA </h1>
-      <p>Fitness | Cooking | Dance | Travel</p>
+    <div style={{ fontFamily: "Arial", backgroundColor: "#0f172a", color: "white", minHeight: "100vh" }}>
+      {/* NAVBAR */}
+      <div style={{ display: "flex", justifyContent: "space-between", padding: "20px", borderBottom: "1px solid #1e293b" }}>
+        <h2>Krish 🔥</h2>
+        <div style={{ display: "flex", gap: "20px" }}>
+          <span onClick={() => setSection("home")} style={{ cursor: "pointer" }}>Home</span>
+          <span onClick={() => setSection("fitness")} style={{ cursor: "pointer" }}>Fitness</span>
+          <span onClick={() => setSection("cooking")} style={{ cursor: "pointer" }}>Cooking</span>
+          <span onClick={() => setSection("dance")} style={{ cursor: "pointer" }}>Dance</span>
+          <span onClick={() => setSection("travel")} style={{ cursor: "pointer" }}>Travel</span>
+        </div>
+      </div>
 
-      <hr />
+      {/* HERO */}
+      {section === "home" && (
+        <div style={{ textAlign: "center", padding: "60px 20px" }}>
+          <h1 style={{ fontSize: "50px", marginBottom: "10px" }}>Krish in USA 🇮🇳🇺🇸</h1>
+          <p style={{ color: "#94a3b8" }}>Fitness | Cooking | Dance | Travel</p>
+          <p style={{ marginTop: "20px", maxWidth: "600px", marginInline: "auto" }}>
+            Building a lifestyle of fitness, culture, and growth while living in the USA.
+          </p>
+        </div>
+      )}
 
-      <h2>💪 Fitness</h2>
-      <p>My gym journey and diet plans</p>
+      {/* FITNESS */}
+      {section === "fitness" && (
+        <div style={{ padding: "40px" }}>
+          <h1>💪 Fitness Journey</h1>
+          <p>Tracking my workouts, diet plans, and transformation goals.</p>
+        </div>
+      )}
 
-      <h2>🍳 Cooking</h2>
-      <p>Paneer curry, chicken curry & more</p>
+      {/* COOKING */}
+      {section === "cooking" && (
+        <div style={{ padding: "40px" }}>
+          <h1>🍳 Cooking</h1>
+          <p>Paneer Curry, Chicken Curry, Coconut Rice & more homemade recipes.</p>
+        </div>
+      )}
 
-      <h2>💃 Dance</h2>
-      <p>Indian + western dance reels</p>
+      {/* DANCE */}
+      {section === "dance" && (
+        <div style={{ padding: "40px" }}>
+          <h1>💃 Dance</h1>
+          <p>Indian + Western dance reels and performances.</p>
+        </div>
+      )}
 
-      <h2>✈️ Travel</h2>
-      <p>Exploring USA & sharing experiences</p>
+      {/* TRAVEL */}
+      {section === "travel" && (
+        <div style={{ padding: "40px" }}>
+          <h1>✈️ Travel</h1>
+          <p>Exploring places across the USA and sharing experiences.</p>
+        </div>
+      )}
 
-      <hr />
-
-      <h2>About Me</h2>
-      <p>I’m Krish, living in the USA and passionate about fitness, cooking, dance, and travel.</p>
+      {/* FOOTER */}
+      <div style={{ textAlign: "center", padding: "20px", borderTop: "1px solid #1e293b", marginTop: "40px" }}>
+        <p style={{ color: "#94a3b8" }}>© 2026 Krish | Built with passion 🔥</p>
+      </div>
     </div>
   );
 }
+
